@@ -1,0 +1,203 @@
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    header p, .name-holder {
+        display: inline-block;
+        left: 0;
+        display: inline-block;
+        font-size: 20px;
+    }
+     
+    .navbar {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .navbar a {
+        display: flex;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        margin: 7px;
+    }
+
+    .cta-button {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        left: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vidbg video {
+        opacity: 0%;
+        
+    }
+
+    .hero-image img {
+        width: 80%;
+        height: auto;
+    }
+    
+    .styles-container {
+        margin-bottom: 50px;
+        background-image: linear-gradient(to bottom, #1a1a1a, #000); /* Add colors */
+        padding: 30px 0;
+    }
+
+    .videocon {
+        flex-direction: column; /* Stack videos vertically */
+        align-items: center;
+    }
+
+    .vidscontainer {
+        padding: 50px; /* Reduce padding for smaller screens */
+        margin-top: 20px;
+        flex-direction: column; /* Stack videos */
+        gap: 20px; /* Reduce space between videos */
+    }
+
+    .titles {
+        display: none;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        width: 90%; /* Make videos take more space */
+        max-width: 100%; /* Allow flexibility */
+        border-radius: 10px; /* Adjust border radius */
+    }
+    
+    .aboutme-container {
+        background-size: cover; /* Ensures the background scales properly */
+        background-position: center; /* Centers the background image */
+        flex-direction: column; /* Stacks content vertically */
+        text-align: center;
+        padding: 50px 20px; /* Adjust padding for better spacing */
+    }
+
+    .abtimg img {
+        width: 90%; /* Prevents oversized images */
+        max-width: 300px; /* Limits image size for mobile */
+        margin: 0 auto; /* Centers the image */
+    }
+
+    .abtme-text {
+        padding: 20px; /* Reduces padding for a compact layout */
+        font-size: 10px; /* Adjusts text size for readability */
+        line-height: 28px;
+    }
+
+    .appsimages-container p{
+        text-transform: uppercase;
+        font-size: 50px;
+        font-family: 'hdcolton';
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .appsimages {
+        display: flex;
+        flex-wrap: wrap; /* Ensures proper alignment on different screens */
+        justify-content: center;
+        align-items: center;
+        gap: 15px; /* Adds uniform spacing */
+    }
+    
+    .appsimages img {
+        min-width: 20px; /* Set a fixed width */
+        min-height: 20px; /* Set a fixed height to maintain consistency */
+        object-fit: contain; /* Ensures the image fits inside without distortion */
+        display: flex; /* Removes extra space under inline images */
+    }
+    
+    .ae {
+        width: 6%;
+        margin-left: 0;
+        margin-right: -5px;
+    }
+
+    .pr {
+        width: 3.25%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .me {
+        width: 3.2%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .davinci {
+        width: 3.8%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .blender {
+        width: 4%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .au {
+        width: 3.2%;
+        margin-left: 0;
+        margin-right: -5px;
+    }
+    
+    .bcc {
+        width: 5%;
+        margin-left: 0;
+        margin-right: -5px;
+    }
+    
+    .sap {
+        width: 5%;
+        margin-left: -5px;
+        margin-right: -10px;
+    }
+
+    .cta-con {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    .cta-button3 {
+        width: 80%; /* Makes button more tap-friendly */
+        font-size: 16px; /* Adjust font size for mobile */
+        padding: 12px 20px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

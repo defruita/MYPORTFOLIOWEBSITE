@@ -1,0 +1,420 @@
+@font-face {
+    font-family: 'coolvetica';
+    font-style: normal;
+    src: url(FONTS/FONT/coolvetica\ condensed\ rg.otf)
+}
+@font-face {
+    font-family: 'sfpro';
+    src: url(FONTS/FONT/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+    font-family: 'hdcolton';
+    src: url(FONTS/FONT/HDColton-CompLight.otf);
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url(FONTS/FONT/HelveticaNeueRoman.otf);
+}
+
+@font-face {
+    font-family: 'brothersignature';
+    src: url(FONTS/FONT/BrotherSignature-7BWnK.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    touch-action: none;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header p {
+    position: relative;
+    right: 200px;
+}
+
+.name-holder {
+    font-family: 'brothersignature';
+    color: rgb(56, 56, 56);
+    font-size: 26px;
+}
+
+.navbar a {
+    color: #000000;
+    letter-spacing: 0.6px;
+    font-family: 'coolvetica';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0 30px;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar a:hover {
+    background-color: #5c5c5c13;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    width: 3px;
+    height: 3px;
+    background-color: black; /* Change to match your theme */
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateX(-50%) scale(0);
+}
+
+.navbar a:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.cta-button {
+    position: relative;
+    left: 200px;
+    font-family: 'sfpro';
+    background-color:#383838;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover{
+    color: #0066ff;
+    opacity: 0.7;
+}
+
+.vidbg {
+    position: relative;
+    display: block;
+
+}
+
+.video-back {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #ffffffab;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero h5 {
+    font-family: monospace;
+    font-size: 22px;
+    color: #265df5;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.hero h2 {
+    font-family: 'oswald';
+    font-size: 86px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.learn-more {
+    background-color: #265df5;
+}
+
+.hire-me {
+    background-color: #333;
+}
+
+/* Image styling */
+.hero-image img {
+    width: 400px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.styles-container {
+    margin-bottom: 100px;
+    background-image: linear-gradient(to bottom);
+}
+
+.videocon {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+.vidscontainer {
+    padding: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; /* Centers video inside */
+    align-items: center;
+    gap: 50px;
+}
+
+.titles {
+    position: absolute;
+    margin-bottom: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 250px;
+}
+
+.titles h1 {
+    font-size: 18px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.first {
+    width: 80%; /* Adjust size as needed */
+    max-width: 300px; /* Prevents video from getting too big */
+    border-radius: 15px; /* Optional: Curved edges */
+}
+
+.second {
+    width: 80%; /* Adjust size as needed */
+    max-width: 300px; /* Prevents video from getting too big */
+    border-radius: 15px; /* Optional: Curved edges */
+}
+
+.third {
+    width: 80%; /* Adjust size as needed */
+    max-width: 300px; /* Prevents video from getting too big */
+    border-radius: 15px; /* Optional: Curved edges */
+}
+
+.fourth {
+    width: 80%; /* Adjust size as needed */
+    max-width: 300px; /* Prevents video from getting too big */
+    border-radius: 15px; /* Optional: Curved edges */
+}
+
+.aboutme-container {
+    background-image: url(IMAGES/videditt.png);
+    background-size: 1920px 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    margin: 0 auto; /* Centers the container dynamically */
+    max-width: 2000px; /* Prevents it from getting too wide */
+}
+
+.abtimg img{
+    width: 120%;
+    margin-left: -100px;
+    max-width: 5000px;
+}
+
+.abtme-text {
+    background-color: #000000db;
+    line-height: 36px;
+    border-radius: 20px;
+    padding: 30px;
+    font-family: 'helvetica';
+    color: #fff;
+}
+
+.appsimages-container {
+    max-width: 2000px;
+    display: block;
+    margin: 0 auto;
+}
+
+.appsimages-container p {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'hdcolton';
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.appsimages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ae {
+    width: 5%;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.pr {
+    width: 3.25%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.me {
+    width: 3.2%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.davinci {
+    width: 3.8%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.blender {
+    width: 4%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.au {
+    width: 3.2%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bcc {
+    width: 4%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.sap {
+    width: 4%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.cta-con {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.cta-button3 {
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 30px;
+    letter-spacing: 1px;
+    font-family: 'helvetica';
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #104cff, #ff758c);
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    background-size: 200% 200%;
+    box-shadow: 0 0px 0px rgba(255, 117, 140, 0.3);
+}
+
+.cta-button3:hover {
+    
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 117, 140, 0.5);
+    background-position: right center; 
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    padding:30px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    color: #333;
+    margin: 5px 0;
+    font-size: 14px;
+}
