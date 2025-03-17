@@ -35,6 +35,7 @@ html {
 
 body {
     touch-action: auto;
+    overflow-y: auto !important;
     font-family: Arial, sans-serif;
     background-color: #000000;
     color: #333;
