@@ -2,7 +2,7 @@
 
     header {
         flex-direction: column;
-        position: sticky;
+        position: relative;
         top: 0;
         z-index: 1000;
         background-color: #ffffff;
