@@ -17,6 +17,7 @@
         left: 0;
         display: inline-block;
         font-size: 20px;
+        display: none;
     }
      
     .navbar {
@@ -40,10 +41,31 @@
         margin: 0px;
         left: 0;
     }
+    
+    .container {
+        margin-top: 0;
+    }
 
     .hero {
         flex-direction: column;
         text-align: center;
+    }
+
+    .hero h1{
+        font-size: 30px;
+    }
+
+    .hero h2{
+        font-size: 50px;
+    }
+
+    .hero h5{
+        font-size: 18px;
+    }
+
+    .hero-buttons a {
+        padding: 8px 16px;
+        font-size: 12px;
     }
 
     .vidbg video {
@@ -52,28 +74,29 @@
     }
 
     .hero-image img {
-        width: 80%;
+        width: 60%;
         height: auto;
     }
     
     .styles-container {
-        margin-bottom: 50px;
-        background-image: linear-gradient(to bottom, #1a1a1a, #000); /* Add colors */
-        padding: 30px 0;
-    }
-
-    .videocon {
-        flex-direction: column; /* Stack videos vertically */
+        margin: 0;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
         align-items: center;
+        padding: 40px 0;
     }
-
+    
     .vidscontainer {
-        padding: 50px; /* Reduce padding for smaller screens */
-        margin-top: 20px;
-        flex-direction: column; /* Stack videos */
-        gap: 20px; /* Reduce space between videos */
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+        grid-template-rows: repeat(2, auto); /* Creates 2 rows */
+        gap: 40px; /* Adjust spacing */
+        max-width: 2000px;
+        padding: 40px;
     }
-
+    
     .titles {
         display: none;
     }
@@ -82,10 +105,12 @@
     .second,
     .third,
     .fourth {
-        width: 90%; /* Make videos take more space */
-        max-width: 100%; /* Allow flexibility */
-        border-radius: 10px; /* Adjust border radius */
+        width: 100%; /* Ensure videos take full column width */
+        max-width: 100%;
+        border-radius: 10px; /* Optional: Rounded corners */
     }
+
+    
     
     .aboutme-container {
         background-size: cover; /* Ensures the background scales properly */
