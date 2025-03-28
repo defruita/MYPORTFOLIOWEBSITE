@@ -110,7 +110,14 @@
         border-radius: 10px; /* Optional: Rounded corners */
     }
 
-    
+    .promotional {
+        margin-bottom: 0px;
+    }
+
+    .myanimation {
+        border-radius: 0px;
+        width: 100%;
+    }
     
     .aboutme-container {
         background-size: cover; /* Ensures the background scales properly */
