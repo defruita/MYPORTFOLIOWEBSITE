@@ -90,9 +90,9 @@
     .vidscontainer {
         margin: 0;
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
-        grid-template-rows: repeat(2, auto); /* Creates 2 rows */
-        gap: 40px; /* Adjust spacing */
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, auto); 
+        gap: 40px; 
         max-width: 2000px;
         padding: 40px;
     }
@@ -105,9 +105,9 @@
     .second,
     .third,
     .fourth {
-        width: 100%; /* Ensure videos take full column width */
+        width: 100%; 
         max-width: 100%;
-        border-radius: 10px; /* Optional: Rounded corners */
+        border-radius: 10px; 
     }
 
     .promotional {
@@ -120,22 +120,22 @@
     }
     
     .aboutme-container {
-        background-size: cover; /* Ensures the background scales properly */
-        background-position: center; /* Centers the background image */
-        flex-direction: column; /* Stacks content vertically */
+        background-size: cover; 
+        background-position: center; 
+        flex-direction: column;
         text-align: center;
-        padding: 50px 20px; /* Adjust padding for better spacing */
+        padding: 50px 20px; 
     }
 
     .abtimg img {
-        width: 90%; /* Prevents oversized images */
-        max-width: 300px; /* Limits image size for mobile */
-        margin: 0 auto; /* Centers the image */
+        width: 90%; 
+        max-width: 300px; 
+        margin: 0 auto; 
     }
 
     .abtme-text {
-        padding: 20px; /* Reduces padding for a compact layout */
-        font-size: 10px; /* Adjusts text size for readability */
+        padding: 20px; 
+        font-size: 10px; 
         line-height: 28px;
     }
 
@@ -150,17 +150,17 @@
 
     .appsimages {
         display: flex;
-        flex-wrap: wrap; /* Ensures proper alignment on different screens */
+        flex-wrap: wrap; 
         justify-content: center;
         align-items: center;
-        gap: 15px; /* Adds uniform spacing */
+        gap: 15px; 
     }
     
     .appsimages img {
-        min-width: 20px; /* Set a fixed width */
-        min-height: 20px; /* Set a fixed height to maintain consistency */
-        object-fit: contain; /* Ensures the image fits inside without distortion */
-        display: flex; /* Removes extra space under inline images */
+        min-width: 20px; 
+        min-height: 20px; 
+        object-fit: contain; 
+        display: flex; 
     }
     
     .ae {
@@ -218,8 +218,8 @@
     }
 
     .cta-button3 {
-        width: 80%; /* Makes button more tap-friendly */
-        font-size: 16px; /* Adjust font size for mobile */
+        width: 80%; 
+        font-size: 16px; 
         padding: 12px 20px;
     }
 
