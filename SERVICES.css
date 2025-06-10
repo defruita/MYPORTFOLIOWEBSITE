@@ -1,0 +1,355 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+    font-family: 'coolvetica';
+    font-style: normal;
+    src: url(FONTS/FONT/coolvetica\ condensed\ rg.otf)
+}
+@font-face {
+    font-family: 'sfpro';
+    src: url(FONTS/FONT/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+    font-family: 'hdcolton';
+    src: url(FONTS/FONT/HDColton-CompLight.otf);
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url(FONTS/FONT/HelveticaNeueRoman.otf);
+}
+
+@font-face {
+    font-family: 'brothersignature';
+    src: url(FONTS/FONT/BrotherSignature-7BWnK.otf);
+}
+
+@font-face {
+    font-family: 'normaltext';
+    src: url(FONTS/FONT/SpotifyMix-Bold.ttf)
+}
+
+@font-face {
+    font-family: 'titletext';
+    src: url(FONTS/FONT/MangoGrotesque-SemiBold.otf)
+}
+
+@font-face {
+    font-family: 'EuropaBold';
+    src: url(FONTS/FONT/EuropaGroteskSH-Bol.otf);
+}
+
+@font-face {
+    font-family: 'EuropaRegular';
+    src: url(FONTS/FONT/EuropaGroteskSH-Reg.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* { 
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    touch-action: auto;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header p {
+    position: relative;
+    right: 200px;
+    color: #000000;
+
+}
+
+.name-holder {
+    font-family: 'brothersignature';
+    color: rgb(56, 56, 56);
+    font-size: 26px;
+}
+
+.navbar a {
+    color: #000000;
+    letter-spacing: 0.6px;
+    font-family: 'coolvetica';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0 30px;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar a:hover {
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    width: 3px;
+    height: 3px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateX(-50%) scale(0);
+}
+
+.navbar a:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.cta-button {
+    position: relative;
+    left: 200px;
+    font-family: 'sfpro';
+    background-color:#383838;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.cta-button:hover{
+    background-color:#00005b;
+    color: #9a9aff;
+}
+
+.section-container {
+    width: 100%;               
+    max-width: 1200px;        
+    margin: 0 auto;           
+}
+
+.content-1 {
+    display: inline-block;
+    position: relative;
+}
+
+.content-1 h1 {
+    font-size: 45px;
+    color: #ff6a3d;
+    font-family: 'EuropaRegular';
+    letter-spacing: 2px;
+}
+
+.content-1 h3 {
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.ms-me {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #ff6a3d;
+    border-radius: 30px;
+    padding: 10px;
+    top: 50px;
+}
+
+.wat-vid {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ff6a3d;
+    background-color: transparent;
+    border: 2px solid #ff6a3d;
+    border-radius: 30px;
+    text-decoration: none;
+    top: 50px;
+    left: 17px;
+}
+
+.content-2 {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    margin: 60px;
+    margin-left: 220px;
+    margin-bottom: 100px;
+}
+
+.pr {
+    width: 50%;
+    position: absolute;
+}
+
+.ae {
+    width: 90%;
+    position: relative;
+    left: 70px;
+    top: 80px;
+}
+
+.INFO {
+    align-items: center;
+    justify-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+
+.intro-text h1 {
+    font-family: 'EuropaBold';
+    font-size: 76px;
+    text-align: center;
+    color: #ff6a3d;
+}
+
+.intro-text h2 {
+    font-family: 'EuropaRegular';
+    text-align: center;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.card-container {
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card-wrapper {
+    margin: 0 60px 35px;
+    position: relative;
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link {
+    position: relative;
+    justify-content: center;
+    user-select: none;
+    display: block;
+    width: 500px;
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow:  0 10px 10px rgba(0, 0, 0, 0.39);
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #ff6a3d;
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .role {
+    font-family: "Inter", sans-serif;
+    color: #000000;
+    background: #ffd6c9;
+    margin: 16px 0 18px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .role.motiongraphics {
+    color: #2e2e52;
+    background: #9a9aff;
+}
+
+.card-list .card-link .role.dtracking {
+    color: #223b3a;
+    background: #b1fffb;
+}
+
+.card-list .card-link .role.colorgrading {
+    color: #3a1f36;
+    background: #ff9af2;
+}
+
+.card-list .card-link .role.cut {
+    color: #3f2525;
+    background: #ff9a9a;
+}
+
+.card-list .card-link .role.keyframes {
+    color: #2b2342;
+    background: #b59aff;
+}
+
+.card-list .card-link .role.soundeffects {
+    color: #8adf1b;
+    background: #2b4d00;
+}
+
+.card-list .card-link .role.uianimation {
+    color: #27facc;
+    background: #058a6d;
+}
+
+.card-list .card-link .role.captions {
+    color: #ffffff;
+    background: #8116be;
+}
+
+.card-list .card-link .role.transition {
+    color: #ffffff;
+    background: #657a03;
+}
+
+.card-list .card-link .card-title {
+    font-family: "Inter", sans-serif;
+    font-size: 1.19rem;
+    color: #000000;
+    font-weight: 600;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+
+
