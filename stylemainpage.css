@@ -23,6 +23,16 @@
     src: url(FONTS/FONT/BrotherSignature-7BWnK.otf);
 }
 
+@font-face {
+    font-family: 'EuropaBold';
+    src: url(FONTS/FONT/EuropaGroteskSH-Bol.otf);
+}
+
+@font-face {
+    font-family: 'EuropaRegular';
+    src: url(FONTS/FONT/EuropaGroteskSH-Reg.otf);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -80,7 +90,6 @@ header p {
 }
 
 .navbar a:hover {
-    /*background-color: #5c5c5c13;*/
     padding: 10px;
     border-radius: 50px;
 }
@@ -92,7 +101,7 @@ header p {
     bottom: 5px;
     width: 3px;
     height: 3px;
-    background-color: black; /* Change to match your theme */
+    background-color: black;
     border-radius: 50%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -114,12 +123,12 @@ header p {
     border-radius: 50px;
     text-decoration: none;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .cta-button:hover{
-    color: #0066ff;
-    opacity: 0.7;
+    background-color:#00005b;
+    color: #9a9aff;
 }
 
 .vidbg {
@@ -146,7 +155,6 @@ header p {
     text-align: center;
 }
 
-/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
@@ -170,13 +178,15 @@ header p {
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-family: 'EuropaRegular';
+    font-stretch: wider;
+    letter-spacing: 2px;
+    font-size: 46px;
     color: #000000;
-    margin-bottom: 10px;
 }
 .hero h2 {
-    font-family: 'oswald';
-    font-size: 86px;
+    font-family: 'EuropaBold';
+    font-size: 100px;
     color: #000000;
     margin-bottom: 20px;
 }
@@ -214,8 +224,8 @@ header p {
 
 .videocon {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .vidscontainer {
@@ -223,74 +233,52 @@ header p {
     margin-top: 50px;
     padding-bottom: 100px;
     display: flex;
-    justify-content: center; /* Centers video inside */
+    justify-content: center; 
     align-items: center;
     gap: 60px;
 }
 
-.titles {
+.vid-con{
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 20px auto;
+}
+
+.overlaytext {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
-    position: absolute;
-    margin-bottom: 600px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 250px;
+    margin-bottom: 20px;
 }
 
-.titles h1 {
-    vertical-align: top;
-    font-size: 18px;
-    color: white;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 5px 10px;
-    border-radius: 8px;
-}
-
-.horm, .gym, .ecom, .abdaal {
-    margin-left: 10px;
+.first, .second, .third, .fourth {
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 15px; 
 }
 
 .promotional {
+    position: relative;
     align-items: center;
     text-align: center;
     margin-bottom: 100px;
 }
 
 .promotional h1,h3 {
+    font-size: 50px;
     top: 20px;
     color: #fff;
     vertical-align: top;
 }
 
 .myanimation {
+    position: relative;
     margin-top: 70px;
-    width: 50%;
+    width: 100%;
+    max-width: 1000px;
     border-radius: 50px;
-}
-
-.first {
-    width: 80%; /* Adjust size as needed */
-    max-width: 300px; /* Prevents video from getting too big */
-    border-radius: 15px; /* Optional: Curved edges */
-}
-
-.second {
-    width: 80%; /* Adjust size as needed */
-    max-width: 300px; /* Prevents video from getting too big */
-    border-radius: 15px; /* Optional: Curved edges */
-}
-
-.third {
-    width: 80%; /* Adjust size as needed */
-    max-width: 300px; /* Prevents video from getting too big */
-    border-radius: 15px; /* Optional: Curved edges */
-}
-
-.fourth {
-    width: 80%; /* Adjust size as needed */
-    max-width: 300px; /* Prevents video from getting too big */
-    border-radius: 15px; /* Optional: Curved edges */
 }
 
 .aboutme-container {
@@ -300,8 +288,8 @@ header p {
     justify-content: center;
     align-items: center;
     padding: 100px;
-    margin: 0 auto; /* Centers the container dynamically */
-    max-width: 2000px; /* Prevents it from getting too wide */
+    margin: 0 auto; 
+    max-width: 2000px; 
 }
 
 .abtimg img{
