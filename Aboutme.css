@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'coolvetica';
+    font-style: normal;
+    src: url(FONTS/FONT/coolvetica\ condensed\ rg.otf)
+}
+@font-face {
+    font-family: 'sfpro';
+    src: url(FONTS/FONT/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+    font-family: 'hdcolton';
+    src: url(FONTS/FONT/HDColton-CompLight.otf);
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url(FONTS/FONT/HelveticaNeueRoman.otf);
+}
+
+@font-face {
+    font-family: 'brothersignature';
+    src: url(FONTS/FONT/BrotherSignature-7BWnK.otf);
+}
+
+@font-face {
+    font-family: 'EuropaBold';
+    src: url(FONTS/FONT/EuropaGroteskSH-Bol.otf);
+}
+
+@font-face {
+    font-family: 'EuropaRegular';
+    src: url(FONTS/FONT/EuropaGroteskSH-Reg.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    touch-action: auto;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header p {
+    position: relative;
+    right: 200px;
+    color: #000000;
+}
+
+.name-holder {
+    font-family: 'brothersignature';
+    color: rgb(56, 56, 56);
+    font-size: 26px;
+}
+
+.navbar a {
+    color: #000000;
+    letter-spacing: 0.6px;
+    font-family: 'coolvetica';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0 30px;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar a:hover {
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    width: 3px;
+    height: 3px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateX(-50%) scale(0);
+}
+
+.navbar a:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.cta-button {
+    position: relative;
+    left: 200px;
+    font-family: 'sfpro';
+    background-color:#383838;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.cta-button:hover{
+    background-color:#00005b;
+    color: #9a9aff;
+}
+
+/***/
+
+.bg-con {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagepp img {
+    height: 600px;
+    object-fit: contain;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.NAME {
+    display: flex;
+    margin-left: 400px;
+    position: relative;
+    bottom: 70px;
+}
+.NAME h1 {
+    font-family: 'sfpro';
+    text-transform: uppercase;
+    font-size: 100px;
+    margin: 0;
+    display: flex;
+    background: linear-gradient(90deg,#00dbde,#fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.low-desc {
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+    margin-right: 300px;
+}
+
+.low-desc h1 {
+    font-family: 'helvetica';
+    font-size: 42px;
+    background: linear-gradient(180deg,#880088,#ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.low-desc p {
+    display: none;
+    margin-top: 25px;
+    font-family: 'EuropaRegular';
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.mid-con {
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 400px;
+    margin-top: 50px;
+    height: 420px;
+    display: inline-block;
+}
+
+.section1-con p{
+    color: #ff6a3d;
+    font-family: 'helvetica';
+    font-size: 36px;
+}
+
+.section1-con h1{
+    color: #000000;
+    font-family: 'EuropaRegular';
+    letter-spacing: 1px;
+    font-size: 28px;
+}
+
+.section1-con h2 {
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'sfpro';
+    font-style: italic;
+    font-size: 15px;
+}
+
+.mid-con2 {
+    display: inline-block;
+    position: relative;
+    bottom: 90px;
+    margin-left: 80px;
+}
+
+.experience {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Des-2 {
+    font-size: 120px;
+    font-weight: bold;
+    color: #ff6a3d;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.Des-3 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+.section2-con {
+    position: relative;
+    top: 30px;
+}
+
+.section2-con h1{
+    color: black;
+    font-family: 'helvetica';
+    font-size: 44px;
+}
+
+.section2-con p {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cta {
+    color: #ff6a3d; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 25px;
+}
+
+.material-symbols-outlined {
+    font-size: 32px;
+    transition: 0.4s ease;
+    position: absolute;
+}
+
+.material-symbols-outlined:hover {
+    font-size: 48px;
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    padding:30px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    color: #4b4b4b;
+    margin: 5px 0;
+    font-size: 14px;
+}
+ 
