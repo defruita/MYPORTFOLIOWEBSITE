@@ -1,0 +1,121 @@
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    header p, .name-holder {
+        display: inline-block;
+        left: 0;
+        display: inline-block;
+        font-size: 20px;
+        display: none;
+    }
+     
+    .navbar {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .navbar a {
+        display: flex;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        margin: 7px;
+    }
+
+    .cta-button {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        left: 0;
+    }
+
+    .section-container {
+        padding: 0 20px;
+    }
+
+    .content-1 {
+        display: block;
+        text-align: center;
+    }
+
+    .content-1 h1 {
+        margin-top: 50px;
+        font-size: 28px;
+    }
+
+    .content-1 h3 {
+        font-size: 11px;
+        margin-top: 15px;
+    }
+
+    .ms-me, .wat-vid {
+        display: inline-block;
+        position: static;
+        margin: 20px auto 0;
+        width: fit-content;
+        margin-bottom: 40px;
+    }
+
+    .content-2 {
+        display: none;
+        width: 100%;
+        margin: 40px auto 0;
+        text-align: center;
+    }
+
+    .pr {
+        width: 70%;
+        position: static;
+        margin: 0 auto;
+    }
+
+    .ae {
+        width: 70%;
+        position: static;
+        margin: 30px auto 0;
+        left: 0;
+        top: 0;
+    }
+
+    .intro-text h1 {
+        font-size: 60px;
+        display: flex;
+    }
+
+    .intro-text h2 {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .card-wrapper {
+        margin: 0 15px 30px;
+    }
+
+    .card-list .card-item .card-link {
+        width: 82.5%;
+        padding: 15px;
+    }
+
+    .card-list .card-link .card-title {
+        font-size: 1rem;
+    }
+
+    .card-list .card-link .role {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+
+}
