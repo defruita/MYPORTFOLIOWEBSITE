@@ -99,7 +99,7 @@
         position: absolute;
         top: 0;              /* swap bottom:90% for a top value that keeps it inside the container */
         left: 0;
-        z-index: 2;            /* sit above the video + overlay */
+        z-index: -2;            /* sit above the video + overlay */
         padding-bottom: 10%;
         padding-top: 0;
         text-align: center;
@@ -108,6 +108,7 @@
     }
 
     .vids-title p {
+       font-family: 'coolvetica';
        font-size: 28px;
        text-transform: uppercase;
        color: #fff;
