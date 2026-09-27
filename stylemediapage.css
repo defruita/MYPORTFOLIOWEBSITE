@@ -1,3 +1,39 @@
+@font-face {
+    font-family: 'coolvetica';
+    font-style: normal;
+    src: url(FONTS/FONT/coolvetica\ condensed\ rg.otf)
+}
+@font-face {
+    font-family: 'sfpro';
+    src: url(FONTS/FONT/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+    font-family: 'hdcolton';
+    src: url(FONTS/FONT/HDColton-CompLight.otf);
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url(FONTS/FONT/HelveticaNeueRoman.otf);
+}
+
+@font-face {
+    font-family: 'brothersignature';
+    src: url(FONTS/FONT/BrotherSignature-7BWnK.otf);
+}
+
+@font-face {
+    font-family: 'EuropaBold';
+    src: url(FONTS/FONT/EuropaGroteskSH-Bol.otf);
+}
+
+@font-face {
+    font-family: 'EuropaRegular';
+    src: url(FONTS/FONT/EuropaGroteskSH-Reg.otf);
+}
+
+
 @media (max-width: 768px) {
 
     html, body {
@@ -98,21 +134,20 @@
     .vids-title {
         position: absolute;
         bottom: 90%;
-        padding-bottom: 5%;
-        padding-top: 5%;
-        transform: translateZ(0);   /* forces new stacking context, no visual rotation */
-        text-align: center;
+        left: 0;
         width: 100%;
-        margin: 20px 0;
-        z-index: 2;                 /* make sure it's explicitly above the video/overlay */
-    }
+        padding: 5% 0;
+        text-align: center;
+        z-index: 2;
+}
 
     .vids-title p {
-       font-family: 'coolvetica';
-       font-size: 28px;
-       text-transform: uppercase;
-       color: #fff;
-    }
+        font-family: 'coolvetica';
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 0;
+}
 
     .vidscontainer {
         margin: 0;
