@@ -1,5 +1,13 @@
 @media (max-width: 768px) {
 
+    html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
     header {
         flex-direction: column;
         position: sticky;
@@ -87,6 +95,24 @@
         padding: 40px 0;
     }
     
+    .vids-title {
+        position: absolute;
+        bottom: 90%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        transform: none;
+        writing-mode: horizontal-tb;
+        text-align: center;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .vids-title p{
+         font-size: 28px;
+         text-transform: uppercase;
+         color: #fff;
+    }
+
     .vidscontainer {
         margin: 0;
         display: grid;
@@ -101,6 +127,10 @@
         display: none;
     }
 
+    .overlaytext h1{
+        font-size: 10px;
+    }
+
     .first,
     .second,
     .third,
@@ -110,8 +140,16 @@
         border-radius: 10px; 
     }
 
+    .promotional-longformwork h1{
+        font-size: 30px;
+    }
+
     .promotional {
         margin-bottom: 0px;
+    }
+
+    .promotional h1, h3 {
+        font-size: 30px;
     }
 
     .myanimation {
