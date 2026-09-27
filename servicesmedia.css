@@ -57,8 +57,9 @@
     }
 
     .content-1 h3 {
-        font-size: 11px;
+        font-size: 55%;
         margin-top: 15px;
+        text-align: center;
     }
 
     .ms-me, .wat-vid {
@@ -90,13 +91,18 @@
         top: 0;
     }
 
+    .intro-text {
+        position: relative;
+        padding-left: 1%;
+    }
+
     .intro-text h1 {
         font-size: 60px;
         display: flex;
     }
 
     .intro-text h2 {
-        font-size: 14px;
+        font-size: 70%;
         text-align: left;
     }
 
