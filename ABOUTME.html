@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chat" />    <link rel="icon" type="image/png" href="IMAGES/favicons.png" sizes="192x192">
     <link rel="stylesheet" href="Aboutme.css">
     <link rel="stylesheet" href="Aboutmemedia.css">
+    <link rel="stylesheet" href="animationframes.css">
     <title>About Ryle</title>
 </head>
 
@@ -21,18 +22,23 @@
     </header>
     
     <div class="bg-con">
+        <div class="vidbgfr">
+        <video id="myVideo" autoplay loop muted plays-inline class="BackgroundVideo">
+            <source class="vidbgfr" src="IMAGES/Main 2 1.mp4" type="video/mp4" alt="background video">
+        </video>
+        </div>
         <div class="NAME">
             <h1>ryle <br>verdejo</h1>
         </div>
         <div class="imagepp">
-            <img src="IMAGES/dddd.png" alt="image of me">
+            <img src="IMAGES\dddd.png" alt="image of me">
         </div>
         <div class="low-desc">
-            <h1>Based in Philippines,<br> I'm Video Editor and<Br> graphic designer</h1>
-            <p>It's certainly no way to get noticed in today's <br> marketplace. Quality content marketing is what <br> it takes to make a modern brand truly shine.</p>
+            <h1>Based in Philippines<br>
         </div>
     </div>
     
+    <div class="mid-wrapper">
     <div class="mid-con">
         <div class="section1-con">
             <p>About Me:</p>
@@ -52,7 +58,7 @@
             </h2>
         </div>
     </div>
-
+    
     <div class="mid-con2">
         <div class="experience">
             <span class="Des-2">2</span> 
@@ -66,9 +72,11 @@
             </a>
         </div>
     </div>
+    </div>
 
     <footer class="footer">
         <p>&copy; 2024 Ryle's Portfolio(Under Construction). All rights reserved.</p>
     </footer>
     
+    <script src="MAINPAGEJS.js"></script>
 </html>
