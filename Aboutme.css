@@ -203,6 +203,7 @@ header p {
     width: fit-content;
     margin: 0 auto;
     right: 2%;
+    
 }
 
 .low-desc {
@@ -242,6 +243,7 @@ header p {
     color: #ff6a3d;
     font-family: 'helvetica';
     font-size: 36px;
+    padding-left: 5%;
 }
 
 .section1-con h1{
@@ -249,6 +251,7 @@ header p {
     font-family: 'EuropaRegular';
     letter-spacing: 1px;
     font-size: 28px;
+    padding-left: 5%;
 }
 
 .section1-con h2 {
@@ -257,6 +260,7 @@ header p {
     font-family: 'sfpro';
     font-style: italic;
     font-size: 15px;
+    padding-left: 5%;
 }
 
 .mid-con2 {
@@ -264,7 +268,7 @@ header p {
     position: relative;
     bottom: 90px;
     left: 30px;
-    padding-left: 200px;
+    padding-left: 120px;
 }
 
 .experience {
