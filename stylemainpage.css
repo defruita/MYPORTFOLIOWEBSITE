@@ -271,11 +271,7 @@ header p {
 }
 
 .vids-title {
-    .vids-title {
     position: relative;
-    z-index: 2;
-}
-
 }
 
 .vids-title p {
