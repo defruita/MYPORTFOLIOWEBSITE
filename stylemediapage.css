@@ -114,7 +114,15 @@
 
     .vidbg video {
         opacity: 0%;
-        
+    }
+
+    .vidbgfr {
+       position: absolute;
+       width: 200%;
+       height: 700px;        /* set to whatever height you want this hero section to be */
+       overflow: hidden;
+       background: #000;
+       opacity: 15%;
     }
 
     .hero-image img {
@@ -136,9 +144,9 @@
         bottom: 90%;
         left: 0;
         width: 100%;
-        padding: 5% 0;
         text-align: center;
         z-index: 2;
+        padding-bottom: 950px;
 }
 
     .vids-title p {
