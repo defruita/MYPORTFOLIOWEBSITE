@@ -97,14 +97,14 @@
     
     .vids-title {
         position: absolute;
-        top: 0;              /* swap bottom:90% for a top value that keeps it inside the container */
-        left: 0;
-        z-index: -2;            /* sit above the video + overlay */
-        padding-bottom: 10%;
-        padding-top: 0;
+        bottom: 90%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        transform: translateZ(0);   /* forces new stacking context, no visual rotation */
         text-align: center;
         width: 100%;
         margin: 20px 0;
+        z-index: 2;                 /* make sure it's explicitly above the video/overlay */
     }
 
     .vids-title p {
