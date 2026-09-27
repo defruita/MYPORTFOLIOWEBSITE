@@ -176,7 +176,7 @@ header p {
 
 .ms-me {
     position: relative;
-    color: white;
+    color: #3d1003;
     font-size: 15px;
     text-decoration: none;
     background-color: #ff6a3d;
@@ -340,10 +340,11 @@ header p {
 }
 
 .card-list .card-link .card-title {
+    text-align: left;
     font-family: "Inter", sans-serif;
-    font-size: 1.19rem;
+    font-size: 0.8rem;
     color: #000000;
-    font-weight: 600;
+    
 }
 
 .swiper {
