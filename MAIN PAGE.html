@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="IMAGES/favicons.png" sizes="192x192">
     <link rel="stylesheet" href="stylemainpage.css">
     <link rel="stylesheet" href="stylemediapage.css">
+    <link rel="stylesheet" href="animationframes.css">
     <title>Ryle's Portfolio</title>
 </head>
 <body>
@@ -20,6 +21,12 @@
         </nav>
         <a onclick="location.href='#styles-target'" class="cta-button">Sampleworks</a>
     </header>
+
+    <div class="vidbgfr">
+        <video autoplay loop muted plays-inline class="BackgroundVideo">
+            <source src="IMAGES/Main 2 1.mp4" type="video/mp4" alt="background video">
+        </video>
+        </div>
 
     <section class="container">
         <div class="vidbg">
@@ -44,23 +51,74 @@
     </section>
 
     <section class="styles-container" id="styles-target">
+    <div class="vids-title">
+        <p>SaaS animation</p>
+    </div>
         <div class="videocon">
             <div class="vidscontainer">
-                
-                <!--
-                <div class="titles">
-                    <h1 class="horm">HORMOZI</h1>
-                    <h1 class="gym">GYM/health</h1>
-                    <h1 class="ecom">E&nbspCOMMERCE</h1>
-                    <h1 class ="abdaal">Ali&nbspAbdaal</h1>
+                <div class="vid-con">
+                    <div class="overlaytext">
+                        <h1>DYNAMIC CAPTION</h1>
+                        <h4>(BrandBossHQ)</h4>
+                    </div>
+                <video loop class="first" poster="IMAGES/SAAS/thmbnl/Bbhq  Gap Video V2.mp4_snapshot_00.17.553.jpg" 
+                controls controlsList="nodownload" oncontextmenu="return false;">
+                    <source src="IMAGES/SAAS/Bbhq  Gap Video V2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 </div>
-                -->
+                
+                <div class="vid-con">
+                    <div class="overlaytext">
+                        <h1>ADVERTISEMENT</h1>
+                        <h4>(Burt's Clean BTS)</h4>
+                    </div>
+                <video loop class="second" poster="IMAGES/SAAS/thmbnl/Burt's Clean Bts.mp4_snapshot_00.05.874.jpg" 
+                controls controlsList="nodownload" oncontextmenu="return false;">
+                    <source src="IMAGES/SAAS/Burt's Clean BTS.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+
+                <div class="vid-con">
+                    <div class="overlaytext">
+                        <h1>WEBSITE SHOWCASE</h1>
+                        <h4>(Burt's Website Showcase)</h4>
+                    </div>
+                <video loop class="third" poster="IMAGES/SAAS/thmbnl/Burt's- Website Showcase V2.mp4_snapshot_00.19.311.jpg" 
+                controls controlsList="nodownload" oncontextmenu="return false;">
+                    <source src="IMAGES/SAAS/Burt's- Website Showcase V2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+
+                <div class="vid-con">
+                    <div class="overlaytext">
+                        <h1>O&E&nbspWEBSIE&nbspEDIT</h1>
+                        <h4>(PROMOTIONAL)</h4>
+                    </div>
+                <video loop class="fourth" poster="IMAGES/SAAS/thmbnl/O&E Website Edit 1.mp4_snapshot_00.02.558.jpg"
+                controls controlsList="nodownload" oncontextmenu="return false;">
+                    <source src="./IMAGES/SAAS/O&E Website Edit 1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="styles-container" id="styles-target">
+    <div class="vids-title">
+        <p>Dynamic captions/subtitles</p>
+    </div>
+        <div class="videocon">
+            <div class="vidscontainer">
 
                 <div class="vid-con">
                     <div class="overlaytext">
                         <h1>HORMOZI</h1>
                     </div>
-                <video loop class="first" controls>
+                <video loop class="first" controls controlsList="nodownload" oncontextmenu="return false;">
                     <source src="IMAGES/Renders.webm" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -70,7 +128,7 @@
                     <div class="overlaytext">
                         <h1>GYM/HEALTH</h1>
                     </div>
-                <video loop class="second" controls>
+                <video loop class="second" controls controlsList="nodownload" oncontextmenu="return false;">
                     <source src="IMAGES/Gym7.webm" type="video/webm">
                     Your browser does not support the video tag.
                 </video>
@@ -80,7 +138,7 @@
                     <div class="overlaytext">
                         <h1>E&nbspCOMMERCE</h1>
                     </div>
-                <video loop class="third" controls>
+                <video loop class="third" controls controlsList="nodownload" oncontextmenu="return false;">
                     <source src="IMAGES/Video4revs1.webm" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -90,7 +148,7 @@
                     <div class="overlaytext">
                         <h1>Ali&nbspAbdaal</h1>
                     </div>
-                <video loop class="fourth" controls>
+                <video loop class="fourth" controls controlsList="nodownload" oncontextmenu="return false;">
                     <source src="./IMAGES/Hgfali2.webm" type="video/webm">
                     Your browser does not support the video tag.
                 </video>
@@ -99,10 +157,15 @@
         </div>
     </section>
     
+    <div class="promotional-longformwork">
+        <h1>LONG&nbspFORM&nbspWORK</h1>
+        <iframe class="YT-VIDEO" width="1280" height="720" src="https://www.youtube-nocookie.com/embed/3BoV6iUyVvk?si=xBl_cCiEMgSk_nOb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
     <div class="promotional">
-        <h1>PROMOTIONAL ADS</h1>
+        <h1>PROMOTIONAL&nbspADS</h1>
         <h3>2d/3d&nbspanimation</h3>
-        <video autoplay loop muted class="myanimation" controls>
+        <video autoplay loop muted class="myanimation" controls controlsList="nodownload" oncontextmenu="return false;">
             <source src="IMAGES/gotyme.webm" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -114,17 +177,17 @@
         </div>
         <div>
             <div class="abtme-text">
-                <h1>Hi! I’m a passionate freelance video editor specializing 
-                    in Adobe Premiere Pro and After Effects. With 2 years of 
-                    experience, I bring stories to life through seamless editing, 
-                    dynamic motion graphics, and eye-catching visual effects.
+                <h1>Hi! I’m a freelance video editor with 2 years of experience creating content that grabs attention, 
+                    drives retention, and keeps viewers engaged. I specialize in Premiere Pro and After Effects, combining 
+                    strong hooks, pacing, motion graphics, and visual storytelling while staying true to each 
+                    client’s brand guidelines and creative direction.
                 </h1>
             </div>
         </div>
     </section>
 
     <section class="appsimages-container">
-        <p>softwares i use</p>
+        <p>softwares i use:</p>
         <div class="appsimages">
              <img src="IMAGES/AELOGO.png" class="ae">
              <img src="IMAGES/PRLOGO.png" class="pr">
@@ -136,12 +199,19 @@
              <img src="IMAGES/SAPLOGO.png" class="sap">
         </div>
         <div class="cta-con">
-            <a href="#" class="cta-button3">See My Workflow</a>
+            <a href="#" class="cta-button3" onclick="alert('Not available for now'); return false;">
+                See My Workflow
+            </a>
         </div>
     </section>
     
     <footer class="footer">
         <p>&copy; 2024 Ryle's Portfolio(Under Construction). All rights reserved.</p>
     </footer>
+    
+    
+
 </body>
 </html>
+
+
