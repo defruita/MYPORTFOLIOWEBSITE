@@ -271,18 +271,23 @@ header p {
 }
 
 .vids-title {
-    width: 0 auto;
-    align-items: center;
-   
-    
+    .vids-title {
+    position: relative;
+    z-index: 2;
 }
 
+}
 
 .vids-title p {
-    font-family: 'coolvetica';
-    font-size: 50px;
+    font-family: 'coolvetica', sans-serif; /* fallback if custom font fails */
+    font-size: 500px;
     color: #fff;
     text-align: center;
+}
+
+.vids-title .subdes {
+    font-size: 13px;
+    letter-spacing: 2px;
 }
 
 .videocon {
