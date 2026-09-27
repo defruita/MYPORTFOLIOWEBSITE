@@ -131,10 +131,27 @@ header p {
     color: #9a9aff;
 }
 
+.vidbgfr {
+    position: absolute;
+    width: 200%;
+    height: 1000px;        /* set to whatever height you want this hero section to be */
+    overflow: hidden;
+    background: #000;
+    opacity: 15%;
+}
+
+.BackgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* fills the section completely, cropping if needed */
+}
+
 .vidbg {
     position: relative;
     display: block;
-
 }
 
 .video-back {
@@ -153,7 +170,9 @@ header p {
     margin-top: 40px;
     padding: 30px;
     text-align: center;
+    animation: popOut-1 0.4s ease;
 }
+
 
 .hero {
     display: flex;
@@ -163,6 +182,14 @@ header p {
     background-color: #ffffffab;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30%;
+
+    background: rgba(255, 255, 255, 0.134);   /* transparent white tint */
+    backdrop-filter: blur(12px);              /* blurs the video behind it */
+    -webkit-backdrop-filter: blur(12px);      /* Safari support */
+    border-radius: 20px;                      /* rounded corners, typical of glass UI */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* subtle edge highlight */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);   /* soft depth */
 }
 
 .hero-text {
@@ -182,12 +209,12 @@ header p {
     font-stretch: wider;
     letter-spacing: 2px;
     font-size: 46px;
-    color: #000000;
+    color: #b8b7b7;
 }
 .hero h2 {
     font-family: 'EuropaBold';
     font-size: 100px;
-    color: #000000;
+    color: #dbdbdb;
     margin-bottom: 20px;
 }
 
@@ -204,10 +231,24 @@ header p {
 
 .learn-more {
     background-color: #265df5;
+    transition: 0.2s ease-in-out;
+}
+
+.learn-more:hover {
+    background-color: #570000;
+    opacity: 50%;
+    scale: 80%;
 }
 
 .hire-me {
     background-color: #333;
+    transition: 0.2s ease-in-out;
+}
+
+.hire-me:hover {
+    background-color: #110096ac;
+    opacity: 50%;
+    scale: 80%;
 }
 
 /* Image styling */
@@ -217,9 +258,31 @@ header p {
     align-items: center;
 }
 
+/* for animation*/
+.styles-container, .promotional, .appsimages-container {
+    animation: popOut-2 ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0%;
+}
+
 .styles-container {
     margin-bottom: 100px;
     background-image: linear-gradient(to bottom);
+}
+
+.vids-title {
+    width: 0 auto;
+    align-items: center;
+   
+    
+}
+
+
+.vids-title p {
+    font-family: 'coolvetica';
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
 }
 
 .videocon {
@@ -228,9 +291,19 @@ header p {
     align-items: center; 
 }
 
+.vidscontainer video {
+    display: block;
+    width: 100%;
+    height: auto;          /* keeps the video's own shape, no stretching */
+    max-height: 80vh;      /* stops tall vertical videos from running off screen */
+    object-fit: contain;
+    border-radius: 20px;
+    background: #000;
+}
+
 .vidscontainer {
     padding: 100px;
-    margin-top: 50px;
+    
     padding-bottom: 100px;
     display: flex;
     justify-content: center; 
@@ -245,18 +318,58 @@ header p {
     margin: 20px auto;
 }
 
+.vid-con {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.vid-con video {
+    display: block;
+    width: 100%;
+    height: auto;          /* keeps the video's own shape, no stretching */
+    max-height: 80vh;      /* stops tall vertical videos from running off screen */
+    object-fit: contain;
+    border-radius: 20px;
+    background: #000;
+}
+
 .overlaytext {
     position: relative;
     text-align: center;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     margin-bottom: 20px;
+    font-size: 8px;
 }
 
 .first, .second, .third, .fourth {
+    display: block;
     width: 100%;
-    max-width: 300px; 
-    border-radius: 15px; 
+    max-width: 300px;
+    height: auto;           /* keeps the video's own shape */
+    object-fit: contain;    /* never crops your edits */
+    border-radius: 15px;
+    background: #000;
+}
+
+.promotional-longformwork {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px
+}
+
+.promotional-longformwork h1,h3 {
+    font-size: 50px;
+    top: 20px;
+    color: #fff;
+    vertical-align: top;
+}
+
+.YT-VIDEO {
+    padding-top: 5%;
 }
 
 .promotional {
@@ -293,7 +406,7 @@ header p {
 }
 
 .abtimg img{
-    width: 120%;
+    width: 160%;
     margin-left: -100px;
     max-width: 5000px;
 }
@@ -311,6 +424,7 @@ header p {
     max-width: 2000px;
     display: block;
     margin: 0 auto;
+    padding-top: 5%;
 }
 
 .appsimages-container p {
