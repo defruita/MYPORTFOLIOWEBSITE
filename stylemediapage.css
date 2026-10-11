@@ -117,12 +117,21 @@
     }
 
     .vidbgfr {
-       position: absolute;
-       width: 200%;
-       height: 700px;        /* set to whatever height you want this hero section to be */
-       overflow: hidden;
-       background: #000;
-       opacity: 15%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;      /* 200% makes the page scroll sideways; change back if the oversize was intentional */
+        height: 700px;
+        overflow: hidden;
+        background: #000;
+        z-index: 0;
+    }
+
+    .vidbgfr video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.15;
     }
 
     .hero-image img {
