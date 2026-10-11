@@ -172,6 +172,7 @@
 
     .overlaytext h1{
         font-size: 10px;
+        pointer-events: none;
     }
 
     .first,
